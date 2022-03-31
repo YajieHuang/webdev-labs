@@ -1,5 +1,6 @@
 body * {
     box-sizing: border-box;
+    display: inline-block;
 }
 
 body {
@@ -10,6 +11,19 @@ body {
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
+
+section{
+    width: 350px;
+    border: solid 1px #CCC;
+}
+
+section h2, p, button{
+    margin: 5%;
+}
+
+img {
+    width: 100%;
+}
 
 
 /* Tablet Media Query */
