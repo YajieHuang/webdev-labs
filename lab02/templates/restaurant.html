@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8"><title>Top Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Restaurant</title>
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    <main>
+        <section>
+            <p>{{restaurant.get("name")}}</p>
+            <img src='{{restaurant.get("image_url")}}'>
+            <p>Search location: {{location}}</p>
+
+            <table>
+                <tr>
+                    <td class="td1">Price: </td>
+                    <td ><strong>{{restaurant.get("price")}}</strong></td>
+                </tr>
+                <tr>
+                    <td class="td1">Rating: </td>
+                    <td ><strong>{{restaurant.get("rating")}}</strong></td>
+                </tr>
+                <tr>
+                    <td class="td1">#Reviews: </td>
+                    <td><strong>{{restaurant.get("review_count")}}</strong></td>
+                </tr>
+            </table>
+        </section>
+        
+    </main>
+</body>
+</html>
+
